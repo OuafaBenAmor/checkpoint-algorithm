@@ -1,0 +1,43 @@
+ALGORITHM my sentence
+VAR
+    sentence: char ;
+    sentence_length: INTEGER :=0 ;
+    num_WORDS :  INTEGER = 0 ; 
+    count_vowels : INTEGER = 0 ;
+
+BEGIN
+  Read(sentence)
+WHILE (sentence <>".") DO
+  sentence_length  ++
+END_WHILE
+
+FOR i FROM 0 TO sentence_length STEP step  DO
+    IF  (sentence_char(i)=" " ) THEN
+    num_WORDS = ++
+    END_IF
+
+    /* **** count vowels **** */
+ 
+    SWITCH (sentence charAt(i)) DO
+   case 'a' : 
+   case 'e' : 
+   case 'i' : 
+   case 'o' : 
+   case 'u' : 
+   case 'A':
+   case 'E':
+   case 'I':
+   case 'O':
+   case 'U':
+   count_vowels= ++; 
+      break;
+ default : Not an vowel ;
+ break
+END_SWITCH
+END_FOR
+
+ write sentence_length
+ write num_WORDS
+ write count_vowels
+
+END
